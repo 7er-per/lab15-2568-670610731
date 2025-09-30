@@ -1,16 +1,16 @@
 import { z } from "zod";
 
-const zStudentId = z
+export const zStudentId = z
   .string()
   .length(9, { message: "Student Id must contain 9 characters" });
-const zFirstName = z
+export const zFirstName = z
   .string()
   .min(3, { message: "First name requires at least 3 charaters" });
-const zLastName = z
+export const zLastName = z
   .string()
   .min(3, { message: "Last name requires at least 3 characters" });
-const zProgram = z.enum(["CPE","ISNE"], {message: "Program must be either CPE or ISNE",});
-const zCourse = z.array(z.number());
+export const zProgram = z.enum(["CPE","ISNE"], {message: "Program must be either CPE or ISNE",});
+export const zCourse = z.array(z.number());
 
 export const zStudentPostBody = z.object({
   studentId: zStudentId,

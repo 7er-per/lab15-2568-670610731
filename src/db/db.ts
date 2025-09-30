@@ -1,3 +1,4 @@
+import { type Student, type Course , type Me} from "../libs/types.js";
 export let students: Student[] = [
     {
       studentId: "650610001",
@@ -10,7 +11,7 @@ export let students: Student[] = [
       firstName: "Cillian",
       lastName: "Murphy",
       program: "CPE",
-      courses: [261207, 261497]
+      courses: [ 261207, 261497]
     },
     {
       studentId: "650610003",
@@ -36,5 +37,15 @@ export let students: Student[] = [
       courseId: 269101,
       courseTitle: "Introduction to Information Systems and Network Engineering",
       instructors: ['KENNETH COSH']
+    }
+  ]
+
+  export let meIN: Me[] = [
+    {
+      studentId: "670610731",
+      firstName: "Wasawat",
+      lastName: "Kheawprom",
+      program: "CPE",
+      section: "001"
     }
   ]
