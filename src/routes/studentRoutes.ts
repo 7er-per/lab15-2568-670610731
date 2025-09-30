@@ -1,11 +1,11 @@
 import { Router, type Request , type Response } from "express";
 
 // import database
-import { students , courses , meIN } from "../db/db.js";
+import { students , courses } from "../db/db.js";
 import {
   zStudentId,
 } from "../schemas/studentValidator.js";
-import type { Student , Course } from "../libs/types.js";
+
 
 const router = Router();
 

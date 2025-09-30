@@ -6,7 +6,7 @@ import  studentRouter  from "./routes/studentRoutes.js";
 import  coursesRouter  from "./routes/courseRoutes.js";
 
 // import database
-import { students , courses , meIN } from "./db/db.js";
+import { meIN } from "./db/db.js";
 
 
 const app: any = express();
